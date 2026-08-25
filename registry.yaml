@@ -1,0 +1,94 @@
+schema_version: 1
+
+# 跨项目全局偏好
+global_preferences:
+  likes:
+    - "时光叙事"
+    - "温暖市井"
+  dislikes:
+    - "冷淡疏离"
+
+projects:
+  - id: "verdict skill 中文名"
+    updated: "2026-08-25"
+    round: 0
+    brief:
+      type: "产品/AI工具"
+      elements: "AI诉讼操作系统；起诉/应诉/庭审/和解前模拟对方律师、法官把案件打一遍；发现漏洞、矛盾、败诉点；现有英文名 Verdict，现有中文名解豸（生僻，拟换）"
+      style: "一看就明白（用户硬约束），直白易懂"
+      language: "中文"
+      constraints: "避免生僻字；一眼传达'开打前先把案件推演一遍'；解豸为反面教材"
+    vetoes: []
+    likes: []
+    shortlist:
+      - name: "诉讼沙盘"
+        score: 9
+        note: "沙盘推演=红蓝对抗推演，覆盖全流程，直白且有产品质感；首选"
+      - name: "官司预演"
+        score: 9
+        note: "直白度满分，零法律背景秒懂；口语感强，适合面向普通当事人"
+      - name: "庭前推演"
+        score: 8
+        note: "借力庭前会议等法律惯用语，律师零学习成本；但窄化覆盖范围"
+      - name: "讼战推演"
+        score: 7.5
+        note: "对抗感最强，讼字略书面，直白度下降"
+    rejected: []
+    deliverable: "output/verdict-skill-中文名-命名方案.md"
+    final: ""
+    finalized: ""
+  - id: "冷萃即饮系列"
+    updated: "2026-08-25"
+    round: 0
+    brief:
+      type: "产品线"
+      elements: "咖啡品牌第二产品线；冷萃即饮；与母品牌'巷口 / Doorstep Coffee'调性一致"
+      style: "温暖市井（延续母品牌），清凉但不冷淡"
+      language: "中英双语"
+      constraints: "与母品牌家族一致性"
+    vetoes: []
+    likes: []
+    shortlist:
+      - name: "巷口小夏 / Alley Summer"
+        score: 9
+        note: "母品牌直系前缀+夏日限定感，家族一致性最高"
+      - name: "晚风冷萃 / Evening Breeze"
+        score: 8
+        note: "市井夏夜乘凉意象，清凉但不冷淡"
+      - name: "拾光冷萃 / Gather Days Cold Brew"
+        score: 8
+        note: "复用全局偏好的时光叙事，英文偏长适合包装侧标"
+    rejected: []
+    final: ""
+    finalized: ""
+  - id: "咖啡品牌"
+    updated: "2026-08-25"
+    round: 1
+    brief:
+      type: "企业/品牌"
+      elements: "咖啡行业；闲适、慢节奏的第三空间感"
+      style: "温暖接地气（保留时光叙事内核）"
+      language: "中英双语"
+      constraints: "无"
+    vetoes:
+      - "山雾"
+      - "慢邮局"
+    likes:
+      - "时光叙事（拾光集获认可）"
+    shortlist:
+      - name: "巷口 / Doorstep Coffee"
+        score: 8
+        note: "最终定稿"
+    rejected:
+      - name: "拾光集 / Lumière Corner"
+        reason: "英文部分被否，中文保留升级为 Gather Days"
+      - name: "山雾 / Misthill"
+        reason: "太冷（用户反馈）"
+      - name: "慢邮局 / Slow Post"
+        reason: "太冷（用户反馈）"
+      - name: "拾光集 / Gather Days"
+        reason: "定稿时未选"
+      - name: "小满 / Little Bloom"
+        reason: "定稿时未选"
+    final: "巷口 / Doorstep Coffee"
+    finalized: "2026-08-25"
